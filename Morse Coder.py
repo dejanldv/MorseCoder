@@ -101,6 +101,8 @@ class MorseCoder(tk.Tk):
         self.button_save.pack(side=tk.LEFT, padx=7, pady=10)
         self.button_help = tk.Button(self.frame1, text='Help', width = 8, command = self.help_)
         self.button_help.pack(side=tk.LEFT, padx=7, pady=10)
+        self.button_codes = tk.Button(self.frame1, text='Codes', width = 8, command = self.codes_)
+        self.button_codes.pack(side=tk.LEFT, padx=7, pady=10)
         self.button_exit = tk.Button(self.frame1, text='Exit', width=8, command=self.exit_)
         self.button_exit.pack(side=tk.LEFT, padx=7, pady=10)
 
@@ -992,9 +994,38 @@ class MorseCoder(tk.Tk):
         7. Press "Stop" button to stop morse code playing.
         ''')
 
-        # if clicked_help:
-        #     self.destroy()
-    
+        
+
+    def codes_(self):
+        clicked_codes = messagebox.showinfo('Codes',
+        '''         ----- Morse Codes -----
+        Letters:
+        A : .- , B: -... , C: -.-. , D: -.. , E: . , F: ..-. , G: --. ,H: .... , I: .. , J: .--- , 
+        K: -.- , L: .-.. , M: -- , N: -. , O: --- , P: .--. , Q: --.- , R: .-. , S: ... , T: - ,
+        U: ..- , V: ...- , W: .-- , X: -..- , Y: -.-- , Z: --.. 
+        
+        Numbers:
+        1: .---- , 2: ..--- , 3: ...-- , 4: ....- , 5: ..... ,
+        6: -.... , 7: --... , 8: ---.. , 9: ----. , 0: ---- 
+        
+        Punctuation
+        ,: --..-- , comma
+        .: .-.-.- , full stop
+        ?: ..--.. , question mark
+        ': .----. , apostrophe
+        :: ---... , colon or division sign
+        ;: -.-.-. , semicolon
+        /: -..-. , slash
+        -: -....- , dash
+       ``: .-..-. , inverted commas
+        _: ..--.- , underscore
+        ": .-..-. , quotation mark
+        $: ...-..- , dollar sign
+        =: -...- , double hyphen
+        +: .-.-. , cross
+        @: .--.-. , 'at' sign ''')
+
+
     def exit_(self):
         self.destroy()
 
