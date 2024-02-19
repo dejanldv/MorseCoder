@@ -3,6 +3,9 @@
 ## About the Project
 Simple applicatioin used for simultaneous translation of Morse code to text and vice versa. User can choose between two input text fields (one for Morse code, and the other on for plain text), type desired characters, which are then immediately translated and shown in the other text field, as user types. Morse code can be played, paused and stopped, usingn appropriate buttons. User can also load or save current text/code, in a txt file, for later use.
 
+## Getting Started
+Morse Coder can be run as .py or .exe file. In both cases, .gif files have to be in application's root folder. 
+
 ## Usage
 After starting the application, user can type text or Morse code into on of two designated input text fields. Text or code is then translated into the other text field, as user is still typing. User can select text or code, delete it or copy/paste it or add lines of text/code. Every change in text immediately affects Morse code and vice versa. When selecting any part of text or code, appropriate charactes will be highlighted in both text fields.
 When typing, user will be notified if the input is wrong. In current version, when typing text, user is limited to letters of the alphabet, numbers, punctuation marks and some additional characters as @, #, ``, etc, while Morse code characters are limited to dash, dot and space.
