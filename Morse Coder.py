@@ -86,6 +86,7 @@ class MorseCoder(tk.Tk):
         # defining program window
         self.minsize(400,550)
         self.resizable(False, False)
+        self.title('Morse Coder')
         
         self.frame0 = tk.Frame(width=400, height=500)
         self.frame0.pack()
